@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms, Privacy and Pilot Notice — Amiklee</title>
+<meta name="description" content="Amiklee's Terms of Use, Privacy Policy and Pilot Notice, in one place and in plain words.">
+<meta property="og:title" content="Terms, Privacy and Pilot Notice — Amiklee">
+<meta property="og:description" content="Amiklee's Terms of Use, Privacy Policy and Pilot Notice, in one place and in plain words.">
+<meta property="og:url" content="https://amiklee.com/terms">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#F6F0E4; --ivory-deep:#EFE7D6; --petrol:#1F4E5F; --petrol-deep:#173D4B;
+  --green:#13AA7A; --green-deep:#0E8A63; --brass:#C49A4A; --espresso:#2E231A;
+  --sepia:#4A3728; --soft:#8C8A82; --taupe:#D4CABA;
+  --grotesk:'Space Grotesk',sans-serif; --sora:'Sora',sans-serif;
+  --fell:'IM Fell English',serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{background:var(--ivory);color:var(--espresso);font-family:var(--sora);font-size:17px;line-height:1.65}
+::selection{background:var(--green);color:#fff}
+
+/* ornamental page frame — same as the landing page */
+.frame{position:fixed;inset:10px;border:1px solid rgba(196,154,74,.55);pointer-events:none;z-index:60}
+.frame::before,.frame::after,
+.frame .c3,.frame .c4{content:"";position:absolute;width:26px;height:26px;border:1px solid rgba(196,154,74,.8)}
+.frame::before{top:-1px;left:-1px;border-right:none;border-bottom:none}
+.frame::after{top:-1px;right:-1px;border-left:none;border-bottom:none}
+.frame .c3{bottom:-1px;left:-1px;border-right:none;border-top:none}
+.frame .c4{bottom:-1px;right:-1px;border-left:none;border-top:none}
+@media(max-width:640px){.frame{display:none}}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+.doc{max-width:740px}
+
+header{padding:34px 0 0}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-family:var(--grotesk);font-weight:700;letter-spacing:-.02em;color:var(--green);text-decoration:none;display:inline-flex;align-items:flex-start;gap:2px}
+.logo .tm{font-size:.34em;font-weight:500;margin-top:.18em}
+header .logo{font-size:28px}
+.beta-pill{font-family:var(--grotesk);font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--petrol);border:1px solid var(--petrol);border-radius:999px;padding:8px 16px;white-space:nowrap}
+
+main{padding:52px 0 20px}
+.eyebrow{font-family:var(--grotesk);font-weight:600;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--green)}
+h1{font-family:var(--sora);font-weight:700;font-size:clamp(30px,4.4vw,44px);letter-spacing:-.015em;line-height:1.14;margin-top:12px;text-wrap:balance}
+.fell-line{font-family:var(--fell);font-style:italic;font-size:clamp(20px,2.4vw,26px);color:var(--petrol);margin-top:14px}
+
+.meta{font-size:15px;color:var(--sepia);border-top:1px solid rgba(74,55,40,.18);border-bottom:1px solid rgba(74,55,40,.18);padding:16px 0;margin:30px 0}
+.meta b{font-weight:700;color:var(--espresso)}
+
+nav.toc{background:var(--ivory-deep);border:1px solid var(--taupe);border-radius:14px;padding:20px 24px;margin:0 0 10px}
+nav.toc p{font-family:var(--grotesk);font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
+nav.toc ol{padding-left:22px}
+nav.toc li{margin:4px 0}
+
+h2{font-family:var(--sora);font-weight:700;font-size:clamp(24px,3vw,32px);letter-spacing:-.01em;margin:56px 0 14px;scroll-margin-top:24px}
+h3{font-family:var(--grotesk);font-weight:700;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin:32px 0 10px}
+p{margin:0 0 16px}
+a{color:var(--petrol);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--brass)}
+a:hover{text-decoration-color:var(--petrol)}
+
+ul{margin:0 0 16px;padding-left:24px}
+li{margin:7px 0}
+dl{margin:0 0 16px}
+dt{font-weight:700;margin-top:18px}
+dd{margin:3px 0 0;color:var(--sepia)}
+
+.callout{background:var(--ivory-deep);border:1px solid var(--taupe);border-left:3px solid var(--green);border-radius:14px;padding:20px 24px;margin:24px 0}
+.callout.warn{border-left-color:var(--brass)}
+.callout p:last-child{margin-bottom:0}
+
+.tbl{overflow-x:auto;margin:14px 0 22px}
+table{width:100%;border-collapse:collapse;font-size:16px}
+th,td{text-align:left;padding:11px 14px 11px 0;border-bottom:1px solid rgba(74,55,40,.14);vertical-align:top}
+th{font-family:var(--grotesk);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--green);font-weight:700}
+td:first-child{font-weight:600;padding-right:22px}
+
+footer{border-top:1px solid rgba(74,55,40,.18);margin-top:64px;padding:38px 0 56px;font-size:14px;color:var(--soft)}
+.footer-row{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+footer a{color:var(--petrol);text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .logo{font-size:20px}
+
+@media(max-width:640px){
+  .wrap{padding:0 20px}
+  body{font-size:16px}
+  .footer-row{justify-content:center;text-align:center;gap:14px}
+  h2{margin-top:44px}
+}
+</style>
+</head>
+<body>
+
+<div class="frame" aria-hidden="true"><span class="c3"></span><span class="c4"></span></div>
+
+<header class="wrap">
+  <div class="header-row">
+    <a class="logo" href="https://amiklee.com">amiklee<span class="tm">TM</span></a>
+    <span class="beta-pill">Invite-only beta</span>
+  </div>
+</header>
+
+<main class="wrap">
+<div class="doc">
+
+  <p class="eyebrow">The fine print</p>
+  <h1>Terms of Use, Privacy Policy and Pilot Notice</h1>
+  <p class="fell-line">Everything you agreed to when you made an account, on one page and in plain words.</p>
+
+  <p class="meta">
+    <b>Version 2026-09-18.</b> This is the version in force. Amiklee is operated by
+    Orbitline Corporation, San Francisco, California. Questions about anything here:
+    <a href="mailto:support@amiklee.com">support@amiklee.com</a>.
+  </p>
+
+  <nav class="toc">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#terms">Terms of Use</a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#pilot">Pilot Notice</a></li>
+    </ol>
+  </nav>
+
+  <!-- ══ TERMS ══ -->
+  <h2 id="terms">1 · Terms of Use</h2>
+
+  <h3>Who can use Amiklee</h3>
+  <p>You must be 18 or older to hold an Amiklee account. During the beta you also need an invitation. If you are under 18, you cannot have an account, and we will close one if we find it.</p>
+  <p>An adult member may bring a minor as a guest to a plan whose organizer allows it. That member is responsible for the minor for the whole of that plan. Amiklee is not.</p>
+
+  <h3>What Amiklee is</h3>
+  <p>Amiklee helps people find and join shared plans. Members called organizers publish a listing. Other members join it. When money is involved, Cost Split works out who owes what.</p>
+
+  <div class="callout">
+    <p><b>Amiklee does not take your money and does not hold it.</b> During the beta no payment goes through Amiklee at all. Cost Split is a calculator and a record. It tells you what you owe and who you owe it to. Settling up happens between you and the other person, in whatever way you two arrange, outside the app.</p>
+  </div>
+
+  <h3>An introduction, not an endorsement</h3>
+  <p>We do not vet organizers, members, venues or activities. We do not run background checks. We do not inspect the places you go or the things you do when you get there. A listing appearing on Amiklee is not a statement by us that it is safe, legal, suitable, accurately described or worth your money.</p>
+  <p>Meeting people you met online carries risk. Deciding whether a plan is right for you, and looking after yourself while you are there, is yours to do.</p>
+
+  <h3>Your account</h3>
+  <ul>
+    <li>Your handle is permanent. It cannot be changed after signup, so choose it as the name you want to be known by.</li>
+    <li>Your handle, display name, photo and interests are visible to other signed-in members. Your real full name, email address and phone number are not.</li>
+    <li>The account is yours alone. Do not share the password, and tell us if you think someone else has it.</li>
+    <li>You are responsible for what happens under your account.</li>
+  </ul>
+
+  <h3>What you agree not to do</h3>
+  <ul>
+    <li>Pretend to be someone else, or make an account for someone who is not you.</li>
+    <li>Post anything unlawful, hateful, harassing, sexual, or aimed at a specific person to upset them.</li>
+    <li>List anything you cannot lawfully offer, or use Amiklee to sell goods or services dressed up as a plan.</li>
+    <li>Take other members' details off Amiklee to use somewhere else, by hand or by script.</li>
+    <li>Try to break, overload or get around any part of the service, including the parts that decide what you are allowed to see.</li>
+    <li>Use Amiklee to collect money you are not owed, or to record splits that never happened.</li>
+  </ul>
+  <p>We can suspend or close an account that does any of this, without notice, and we can do it to protect other members before we have all the facts.</p>
+
+  <h3>If you organize</h3>
+  <p>Publishing a listing is a promise to the people who join it. Describe the plan accurately. Say what it costs and who pays for what. Say what happens if it is called off. Hold to what you published, or tell everyone promptly that it has changed. Anything you need a licence, permit or insurance for is yours to hold, not ours.</p>
+
+  <h3>What you post</h3>
+  <p>You keep ownership of your photos, listings, messages and everything else you put into Amiklee. You give us permission to store it, show it to the members it is meant for, and make the ordinary technical copies that running a service requires. That permission ends when you delete the content or your account, except for copies already made by other members and for records we must keep.</p>
+
+  <h3>Ami and Leelee</h3>
+  <p>Ami is Amiklee's concierge and Leelee is its support helper. Both are software, not people. What you type to them is sent to our AI provider to produce a reply. They can be wrong. Do not treat what they say as legal, medical, financial or safety advice, and do not type anything into them you would not want stored.</p>
+
+  <h3>Where we stand if something goes wrong</h3>
+  <p>Amiklee is provided as it is. We do not promise it will be available, accurate, uninterrupted or free of faults, and during the beta it will be none of those things some of the time.</p>
+  <p>To the fullest extent the law allows, Orbitline Corporation is not liable for what happens between members, for what happens at a plan, for money owed between members and not paid, or for any indirect or consequential loss. Nothing here limits liability for death or personal injury caused by our negligence, for fraud, or for anything else that cannot lawfully be limited.</p>
+
+  <h3>Ending it</h3>
+  <p>You can close your account at any time in Settings. We can end your access if you break these terms or if we stop running the service. These terms stop applying when your account closes, apart from the parts that by their nature carry on, such as the section above.</p>
+
+  <h3>Law and changes</h3>
+  <p>These terms are governed by the laws of the State of California, and disputes belong to the state and federal courts in San Francisco.</p>
+  <p>When we change anything on this page we change the version date at the top. If a change materially affects you, we will tell you in the app or by email before it takes effect.</p>
+
+  <!-- ══ PRIVACY ══ -->
+  <h2 id="privacy">2 · Privacy Policy</h2>
+  <p>Short version: we collect what the app needs to work, we do not sell it, and we do not run advertising.</p>
+
+  <h3>What we hold about you</h3>
+  <dl>
+    <dt>Because you gave it to us</dt>
+    <dd>First name, email address, password, handle, and optionally a photo and up to three interests. Anything else you later add in Settings, such as a phone number or social links.</dd>
+    <dt>Because you used Amiklee</dt>
+    <dd>The listings you publish or join, the questions you ask organizers, your Cost Split entries and who they involve, your messages to Ami and Leelee, and any support or feedback ticket you open.</dd>
+    <dt>Because your device connected to ours</dt>
+    <dd>Technical records such as the time of a request and a general sense of where in the world it came from. We ask our analytics provider not to keep your IP address, but it still derives an approximate city and postal area from it before discarding it.</dd>
+  </dl>
+  <p>We do not ask for your date of birth, and we do not collect payment card details, because no payment goes through Amiklee during the beta.</p>
+
+  <h3>Who can see what</h3>
+  <div class="tbl">
+  <table>
+    <tr><th>Item</th><th>Who sees it</th></tr>
+    <tr><td>Handle, display name, photo, interests</td><td>Any signed-in member</td></tr>
+    <tr><td>Your first and last name, email, phone</td><td>Only you and us</td></tr>
+    <tr><td>Listings you publish</td><td>Members, and anyone with the link if you made it public</td></tr>
+    <tr><td>Plans you joined</td><td>The organizer and the other people on that plan</td></tr>
+    <tr><td>Cost Split entries</td><td>The people on that split</td></tr>
+    <tr><td>Messages to Ami or Leelee</td><td>You, us, and our AI provider</td></tr>
+  </table>
+  </div>
+
+  <h3>What we do with it</h3>
+  <p>We use it to run the service, to show the right things to the right people, to answer your support tickets, to keep accounts secure, and to understand in aggregate which parts of the app people use so we can improve them. That is all. We do not sell personal data, we do not share it with advertisers, and we do not use it to train anyone's AI models.</p>
+
+  <h3>Companies that process data for us</h3>
+  <div class="tbl">
+  <table>
+    <tr><th>Who</th><th>What for</th></tr>
+    <tr><td>Supabase</td><td>Accounts, sign-in and the main database</td></tr>
+    <tr><td>Vercel</td><td>Serving the app to your browser</td></tr>
+    <tr><td>Railway</td><td>Our application server and stored media</td></tr>
+    <tr><td>PostHog</td><td>Product analytics</td></tr>
+    <tr><td>Anthropic</td><td>The replies Ami and Leelee give</td></tr>
+    <tr><td>Formspree</td><td>The waitlist form on amiklee.com</td></tr>
+    <tr><td>Stripe</td><td>Card payments. Not switched on during the beta.</td></tr>
+  </table>
+  </div>
+  <p>Each of them handles data on our instructions and for no purpose of their own. They are based in, or store data in, the United States.</p>
+
+  <h3>Analytics, specifically</h3>
+  <p>Our analytics identify you by an internal account number, never by your handle, name or email. Web addresses and free text are stripped before an event leaves your browser, so a private link you opened does not travel with it. We do not record your screen, we do not capture your clicks automatically, and we do not use advertising trackers or third-party cookies.</p>
+
+  <h3>How long we keep it</h3>
+  <p>Your account data stays until you delete your account. Listings, participations and split records stay while the account exists, because other members' records depend on them. Analytics events are kept in aggregate and are not traceable back to you once an account is deleted. Support and feedback tickets are kept for up to 24 months.</p>
+
+  <h3>Your choices</h3>
+  <ul>
+    <li><b>See and correct.</b> Most of what we hold is visible and editable in Settings.</li>
+    <li><b>Delete.</b> Settings has "Delete my account". It removes your profile, your private details and your content. Records other members need, such as a split they were part of, keep the fact that a member was there without your personal details attached.</li>
+    <li><b>Ask us.</b> Email <a href="mailto:support@amiklee.com">support@amiklee.com</a> for a copy of your data, a correction, or a deletion we cannot do from the app. We answer within 30 days.</li>
+  </ul>
+  <p>If you are in California, the CCPA gives you rights to know, delete, correct and opt out of sale. We do not sell personal information, so there is nothing to opt out of, and we will never charge you or treat you differently for exercising any of these rights.</p>
+
+  <h3>Security, and its limits</h3>
+  <p>Data is encrypted in transit and at rest, passwords are never stored in a form we can read, and access to the production database is limited to the people who run it. No system is perfect. If a breach affects you we will tell you promptly and say what we know.</p>
+
+  <h3>Children</h3>
+  <p>Amiklee is not for anyone under 18 and we do not knowingly collect anything from a child. If you believe a minor has an account, email <a href="mailto:support@amiklee.com">support@amiklee.com</a> and we will remove it.</p>
+
+  <!-- ══ PILOT ══ -->
+  <h2 id="pilot">3 · Pilot Notice</h2>
+  <p>You are one of a small invited group using Amiklee before it is finished. This section is the honest account of what that means.</p>
+
+  <div class="callout warn">
+    <p><b>This is unfinished software.</b> Things will break. Screens will look wrong. A plan may fail to save, a notification may not arrive, and a number may be off. None of it is your fault and none of it means you did something wrong.</p>
+  </div>
+
+  <h3>What to expect</h3>
+  <ul>
+    <li><b>We may reset data.</b> Test listings, splits and messages can be cleared while we fix things. Do not use Amiklee as the only record of anything that matters.</li>
+    <li><b>Features will move.</b> Something you liked may change or disappear between one week and the next.</li>
+    <li><b>Money stays outside the app.</b> Cost Split tells you what is owed. It does not move a cent. Settle up with each other directly, the way you normally would.</li>
+    <li><b>Your feedback gets read.</b> Every ticket and every piece of feedback goes to a real person. We may quote it internally and use it to decide what to build, always without your name attached.</li>
+    <li><b>Support is by email.</b> <a href="mailto:support@amiklee.com">support@amiklee.com</a> for anything broken or anything you cannot get into. <a href="mailto:feedback@amiklee.com">feedback@amiklee.com</a> for what you think.</li>
+  </ul>
+
+  <h3>What we ask of you</h3>
+  <p>Use real plans with real people, because that is the only way we learn anything. Tell us when something is wrong rather than working around it. Treat the other testers the way you would want to be treated, since there are few enough of you that everyone notices.</p>
+
+  <h3>What this is not</h3>
+  <p>The beta is free, and being in it is not a promise of future access, future pricing, or that Amiklee will launch at all. We can end the beta or change who is in it at any time. If we do, we will give you a way to take your data with you.</p>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <a class="logo" href="https://amiklee.com">amiklee<span class="tm">TM</span></a>
+    <div>
+      <a href="mailto:support@amiklee.com">support@amiklee.com</a>
+      &nbsp;·&nbsp; <a href="mailto:feedback@amiklee.com">feedback@amiklee.com</a>
+    </div>
+    <div>
+      Version 2026-09-18
+      &nbsp;·&nbsp; © 2026 Amiklee
+      &nbsp;·&nbsp; Amiklee is operated by Orbitline Corporation
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
